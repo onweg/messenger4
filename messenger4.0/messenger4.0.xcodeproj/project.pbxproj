@@ -10,6 +10,7 @@
 		740600BB2BD50FF600B827BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740600BA2BD50FF600B827BE /* User.swift */; };
 		740600BF2BD5312D00B827BE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740600BE2BD5312D00B827BE /* ContentViewModel.swift */; };
 		740600C12BD55FC700B827BE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740600C02BD55FC700B827BE /* UserService.swift */; };
+		740600C52BD6EDB400B827BE /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740600C42BD6EDB400B827BE /* InboxViewModel.swift */; };
 		745039B22BCA692100CE7BC7 /* messenger4_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745039B12BCA692100CE7BC7 /* messenger4_0App.swift */; };
 		745039B62BCA692800CE7BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745039B52BCA692800CE7BC7 /* Assets.xcassets */; };
 		745039B92BCA692800CE7BC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745039B82BCA692800CE7BC7 /* Preview Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		740600BA2BD50FF600B827BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		740600BE2BD5312D00B827BE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		740600C02BD55FC700B827BE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		740600C42BD6EDB400B827BE /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 		745039AE2BCA692100CE7BC7 /* messenger4.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messenger4.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		745039B12BCA692100CE7BC7 /* messenger4_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messenger4_0App.swift; sourceTree = "<group>"; };
 		745039B52BCA692800CE7BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +102,23 @@
 			isa = PBXGroup;
 			children = (
 				740600BE2BD5312D00B827BE /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		740600C22BD6ED8600B827BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74751E2E2BD18A0600E62442 /* InboxView.swift */,
+				74751E2D2BD18A0600E62442 /* InboxRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		740600C32BD6ED8F00B827BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				740600C42BD6EDB400B827BE /* InboxViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -184,8 +203,8 @@
 		74751E2C2BD18A0600E62442 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
-				74751E2D2BD18A0600E62442 /* InboxRowView.swift */,
-				74751E2E2BD18A0600E62442 /* InboxView.swift */,
+				740600C32BD6ED8F00B827BE /* ViewModel */,
+				740600C22BD6ED8600B827BE /* View */,
 			);
 			path = Inbox;
 			sourceTree = "<group>";
@@ -376,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74751E542BD18A0600E62442 /* SettingOptionViewModel.swift in Sources */,
+				740600C52BD6EDB400B827BE /* InboxViewModel.swift in Sources */,
 				74751E5C2BD18A0600E62442 /* RegistrationView.swift in Sources */,
 				74751E502BD18A0600E62442 /* ShapeMessage.swift in Sources */,
 				74751E4E2BD18A0600E62442 /* InboxView.swift in Sources */,
