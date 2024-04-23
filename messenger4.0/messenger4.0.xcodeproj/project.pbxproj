@@ -37,6 +37,8 @@
 		74751E5E2BD18A0600E62442 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74751E4A2BD18A0600E62442 /* AuthService.swift */; };
 		74751E5F2BD18A0600E62442 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74751E4C2BD18A0600E62442 /* NewMessageView.swift */; };
 		749130652BD809E900867B48 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749130642BD809E900867B48 /* NewMessageViewModel.swift */; };
+		749130672BD8166E00867B48 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749130662BD8166E00867B48 /* Message.swift */; };
+		749130692BD818AD00867B48 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749130682BD818AD00867B48 /* MessageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		74751E4A2BD18A0600E62442 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		74751E4C2BD18A0600E62442 /* NewMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		749130642BD809E900867B48 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
+		749130662BD8166E00867B48 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		749130682BD818AD00867B48 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				740600BA2BD50FF600B827BE /* User.swift */,
+				749130662BD8166E00867B48 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				740600C02BD55FC700B827BE /* UserService.swift */,
+				749130682BD818AD00867B48 /* MessageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -433,7 +439,9 @@
 				74751E522BD18A0600E62442 /* ChatMessageCell.swift in Sources */,
 				74751E572BD18A0600E62442 /* ContentView.swift in Sources */,
 				74751E5D2BD18A0600E62442 /* LoginView.swift in Sources */,
+				749130692BD818AD00867B48 /* MessageService.swift in Sources */,
 				74751E4F2BD18A0600E62442 /* ActiveNowView.swift in Sources */,
+				749130672BD8166E00867B48 /* Message.swift in Sources */,
 				745039B22BCA692100CE7BC7 /* messenger4_0App.swift in Sources */,
 				740600BB2BD50FF600B827BE /* User.swift in Sources */,
 			);

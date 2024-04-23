@@ -41,7 +41,7 @@ struct InboxView: View {
             })
             .navigationDestination(isPresented: $showChat, destination: {
                 if let user = selectedUser{
-                    ChatView()
+                    ChatView(user: user)
                 }
             })
             .fullScreenCover(isPresented: $showMessageView, content: {
