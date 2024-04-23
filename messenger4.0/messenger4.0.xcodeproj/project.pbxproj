@@ -36,6 +36,7 @@
 		74751E5D2BD18A0600E62442 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74751E482BD18A0600E62442 /* LoginView.swift */; };
 		74751E5E2BD18A0600E62442 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74751E4A2BD18A0600E62442 /* AuthService.swift */; };
 		74751E5F2BD18A0600E62442 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74751E4C2BD18A0600E62442 /* NewMessageView.swift */; };
+		749130652BD809E900867B48 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749130642BD809E900867B48 /* NewMessageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		74751E482BD18A0600E62442 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		74751E4A2BD18A0600E62442 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		74751E4C2BD18A0600E62442 /* NewMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		749130642BD809E900867B48 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		740600C72BD708E400B827BE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				749130642BD809E900867B48 /* NewMessageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				74751E532BD18A0600E62442 /* CircularProfileImageView .swift in Sources */,
 				74751E552BD18A0600E62442 /* ProfileViewModel.swift in Sources */,
 				74751E592BD18A0600E62442 /* RegistrationViewModel.swift in Sources */,
+				749130652BD809E900867B48 /* NewMessageViewModel.swift in Sources */,
 				740600C12BD55FC700B827BE /* UserService.swift in Sources */,
 				74751E522BD18A0600E62442 /* ChatMessageCell.swift in Sources */,
 				74751E572BD18A0600E62442 /* ContentView.swift in Sources */,
