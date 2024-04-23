@@ -17,7 +17,7 @@ struct Message: Identifiable, Codable, Hashable{
     }
     
     let fromId: String // от кого сообщение
-    let tiId: String // кому сообщение
+    let toId: String // кому сообщение
     let messageText: String //текст сообщения
     let timestamp: Timestamp // время отправки сообщения (временная метка)
     
