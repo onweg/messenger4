@@ -8,6 +8,7 @@
 import Foundation
 import Firebase
 
+@MainActor
 class NewMessageViewModel: ObservableObject{
     @Published var users = [User]()
     
