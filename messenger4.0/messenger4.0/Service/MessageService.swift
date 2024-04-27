@@ -42,13 +42,13 @@ struct MessageService{
         let query = messagesCollection
             .document(currentUid)
             .collection(chatPartnerId)
-            .order(by: "timestamp", descendin: false)
+            .order(by: "timestamp", descending: false)
         
         query.addSnapshotListener { snapshot, _ in
             guard let changes = snapshot?.documentChanges.filter({$0.type == .added}) else { return }
-            var messages = changes.CompactMap({ try? $0.document.data(as: Message.self)})
+            var messages = changes.compactMap({ try? $0.document.data(as: Message.self)})
             
-            for (index, message) in messages.enumerated() where message.fromId != currentUid{
+            for (index, message) in messages.enumerated() where !message.isFromCurrentUser{
                 messages[index].user = chatPartner
             }
             
