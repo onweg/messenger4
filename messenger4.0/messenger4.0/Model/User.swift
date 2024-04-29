@@ -20,7 +20,11 @@ struct User: Codable, Identifiable, Hashable {
     let email: String
     var profileImageURL: String?
     
-    
+    var firstName: String{
+        let formatter = PersonNameComponentsFormatter()
+        let components = formatter.personNameComponents(from: fullname)
+        return components?.givenName ?? fullname
+    }
 }
 
 

@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ActiveNowView: View {
+    
+    @StateObject var viewModel = ActiveNowViewModel()
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false){
             HStack(spacing: 32){
-                ForEach(0 ... 10, id: \.self){ user in
+                ForEach(viewModel.users){ user in
                     VStack{
                         ZStack(alignment: .bottomTrailing){
-                            CircularProfileImageView(user: User.MOCK_USER, size: .medium)
+                            CircularProfileImageView(user: user, size: .medium)
                             
                             ZStack{
                                 Circle()
@@ -27,8 +29,8 @@ struct ActiveNowView: View {
                             }
                         }
                         
-                        Text("Bruce")
-                            .font(.subheadline)
+                        Text(user.firstName)
+                            .font(.footnote)
                             .foregroundColor(.gray)
                     }
                 }

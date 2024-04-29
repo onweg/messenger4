@@ -161,7 +161,6 @@
 		745039A52BCA692100CE7BC7 = {
 			isa = PBXGroup;
 			children = (
-				7491307D2BE0461D00867B48 /* ActiveNowViewModel.swift */,
 				745039B02BCA692100CE7BC7 /* messenger4.0 */,
 				745039AF2BCA692100CE7BC7 /* Products */,
 			);
@@ -401,6 +400,7 @@
 		749130792BE045D900867B48 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7491307D2BE0461D00867B48 /* ActiveNowViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
