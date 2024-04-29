@@ -42,6 +42,7 @@
 		7491306D2BD81EEE00867B48 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491306C2BD81EEE00867B48 /* ChatViewModel.swift */; };
 		749130702BDEF72B00867B48 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491306F2BDEF72B00867B48 /* ChatService.swift */; };
 		749130732BDEF88C00867B48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749130722BDEF88C00867B48 /* Constants.swift */; };
+		749130762BDF032D00867B48 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749130752BDF032D00867B48 /* InboxService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		7491306C2BD81EEE00867B48 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		7491306F2BDEF72B00867B48 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		749130722BDEF88C00867B48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		749130752BDF032D00867B48 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 		74751E2C2BD18A0600E62442 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
+				749130742BDF031000867B48 /* Service */,
 				740600C32BD6ED8F00B827BE /* ViewModel */,
 				740600C22BD6ED8600B827BE /* View */,
 			);
@@ -380,6 +383,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		749130742BDF031000867B48 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				749130752BDF032D00867B48 /* InboxService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,6 +482,7 @@
 				74751E562BD18A0600E62442 /* ProfileView.swift in Sources */,
 				74751E5F2BD18A0600E62442 /* NewMessageView.swift in Sources */,
 				74751E4D2BD18A0600E62442 /* InboxRowView.swift in Sources */,
+				749130762BDF032D00867B48 /* InboxService.swift in Sources */,
 				749130732BDEF88C00867B48 /* Constants.swift in Sources */,
 				74751E582BD18A0600E62442 /* LoginViewModel.swift in Sources */,
 				74751E512BD18A0600E62442 /* ChatView.swift in Sources */,

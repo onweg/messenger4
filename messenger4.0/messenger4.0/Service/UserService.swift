@@ -27,4 +27,7 @@ class UserService{
         let snapshot = try await Firestore.firestore().collection("users").getDocuments()
         return snapshot.documents.compactMap({  try? $0.data(as: User.self)})
     }
+    
+    static func fetchUser(withUid uid: String)
+    // остановился на модуле 22 на 14:00
 }
