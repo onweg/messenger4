@@ -18,7 +18,7 @@ class InboxService{
         
         query.addSnapshotListener { snapshot, _ in
             guard let changes = snapshot?.documentChanges.filter({
-                $0.type === .added || $0.type == .modified
+                $0.type == .added || $0.type == .modified
             }) else { return }
             
             self.documentChanges = changes
