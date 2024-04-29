@@ -20,25 +20,24 @@ struct InboxView: View {
     
     var body: some View {
         NavigationStack{
-            ScrollView{
-                
+            List{
                 ActiveNowView()
+                    .listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets())
+                    .padding(.vertical)
+                    .padding(.horizontal, 4)
                 
-                List{
-                    ForEach(viewModel.recentMessages){ message in
-                        ZStack{
-                            NavigationLink(value: message){
-                                EmptyView()
-                            }.opacity(0.0)
-                            
-                            InboxRowView(message: message)
-                        }
+                ForEach(viewModel.recentMessages){ message in
+                    ZStack{
+                        NavigationLink(value: message){
+                            EmptyView()
+                        }.opacity(0.0)
+                        
+                        InboxRowView(message: message)
                     }
                 }
-                .listStyle(PlainListStyle())
-                .frame(height: UIScreen.main.bounds.height - 120)
-                
             }
+            .listStyle(PlainListStyle())
             .onChange(of: selectedUser, perform: { newValue in
                 showChat = newValue != nil
             })
