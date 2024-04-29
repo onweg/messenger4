@@ -45,6 +45,7 @@
 		749130762BDF032D00867B48 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749130752BDF032D00867B48 /* InboxService.swift */; };
 		749130782BE03F2C00867B48 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749130772BE03F2C00867B48 /* Date.swift */; };
 		7491307E2BE0461D00867B48 /* ActiveNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491307D2BE0461D00867B48 /* ActiveNowViewModel.swift */; };
+		749130822BE04ACC00867B48 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749130812BE04ACC00867B48 /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		749130752BDF032D00867B48 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 		749130772BE03F2C00867B48 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Date.swift; path = messenger4.0/Core/Inbox/Service/Date.swift; sourceTree = SOURCE_ROOT; };
 		7491307D2BE0461D00867B48 /* ActiveNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowViewModel.swift; sourceTree = "<group>"; };
+		749130812BE04ACC00867B48 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		745039B02BCA692100CE7BC7 /* messenger4.0 */ = {
 			isa = PBXGroup;
 			children = (
+				749130802BE04AB700867B48 /* Routing */,
 				740600B92BD50FE800B827BE /* Model */,
 				74751E2B2BD18A0600E62442 /* Core */,
 				74751E282BCFAA1900E62442 /* App */,
@@ -413,6 +416,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		749130802BE04AB700867B48 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				749130812BE04ACC00867B48 /* Route.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -514,6 +525,7 @@
 				74751E552BD18A0600E62442 /* ProfileViewModel.swift in Sources */,
 				74751E592BD18A0600E62442 /* RegistrationViewModel.swift in Sources */,
 				749130652BD809E900867B48 /* NewMessageViewModel.swift in Sources */,
+				749130822BE04ACC00867B48 /* Route.swift in Sources */,
 				740600C12BD55FC700B827BE /* UserService.swift in Sources */,
 				74751E522BD18A0600E62442 /* ChatMessageCell.swift in Sources */,
 				74751E572BD18A0600E62442 /* ContentView.swift in Sources */,
